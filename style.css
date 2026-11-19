@@ -1,7 +1,11 @@
+@font-face{font-family:"Barlow";font-weight:400;font-display:swap;src:url(fonts/Barlow-Regular.woff2) format("woff2")}
+@font-face{font-family:"Barlow";font-weight:700;font-display:swap;src:url(fonts/Barlow-Bold.woff2) format("woff2")}
+@font-face{font-family:"Noto Sans JP";font-weight:400;font-display:swap;src:url(fonts/NotoSansJP-Regular.woff2) format("woff2")}
+@font-face{font-family:"Noto Sans JP";font-weight:700;font-display:swap;src:url(fonts/NotoSansJP-Bold.woff2) format("woff2")}
 :root{--bg:#f6f4fb;--card:#fff;--ink:#1d1b2e;--muted:#6a6490;--line:#e3dff0;--accent:#5a46b8;--gold:#c8963a}
 @media (prefers-color-scheme:dark){:root{--bg:#0f0c24;--card:#1a1636;--ink:#ece9f7;--muted:#a9a3c8;--line:#322c58;--accent:#9a86f0;--gold:#e8c57a}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",Barlow,sans-serif;line-height:1.85}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Barlow","Noto Sans JP","Hiragino Sans",sans-serif;line-height:1.95;letter-spacing:.02em;font-size:16px;-webkit-text-size-adjust:100%}
 .hero{background:radial-gradient(60% 120% at 12% 0%,#35d6ee55 0%,transparent 60%),radial-gradient(60% 120% at 92% 10%,#d94fe055 0%,transparent 60%),linear-gradient(135deg,#1a1240,#2c1a6b 55%,#131033);color:#fff;padding:36px 20px 44px;text-align:center}
 .hero img.wordmark{width:210px;max-width:60%;height:auto;display:block;margin:0 auto 10px}
 .hero p{margin:6px 0 0;color:#e7e2ff;font-size:.98rem}
@@ -32,3 +36,18 @@ hr{border:0;border-top:1px solid var(--line);margin:28px 0}
 .app img{width:72px;height:72px;border-radius:23%;box-shadow:0 4px 14px #0003}
 .app b{display:block;font-size:1.1rem}
 .app small{color:var(--muted);font-size:.85rem;line-height:1.5;display:block}
+
+.wrap{max-width:680px}
+p,li,.faq{text-wrap:pretty;line-break:strict}
+h1,h2{text-wrap:balance;line-height:1.5}
+h1{font-weight:700}
+h2{font-weight:700;margin:2em 0 .6em}
+p{margin:.7em 0}
+li{margin:.6em 0}
+.faq{padding:14px 0}
+.faq b{margin-bottom:.35em}
+.note.left{text-align:left;margin-top:1.6em}
+.fontnote{margin-top:.6em}
+.fontnote a{color:inherit}
+
+body{word-break:keep-all;overflow-wrap:anywhere}
