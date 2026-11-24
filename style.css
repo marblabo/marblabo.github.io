@@ -74,3 +74,8 @@ body{word-break:keep-all;overflow-wrap:anywhere}
 
 .plan th{overflow-wrap:normal;font-size:.88rem;line-height:1.5}
 .plan td{font-size:.9rem}
+
+.demo{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:.6em}
+.demo figure{margin:0;flex:1 1 240px;max-width:300px;text-align:center}
+.demo video{width:100%;height:auto;aspect-ratio:9/16;border-radius:16px;border:1px solid var(--line);background:#0a0817}
+.demo figcaption{color:var(--muted);font-size:.85rem;margin-top:6px}
