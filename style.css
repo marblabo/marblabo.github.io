@@ -79,3 +79,8 @@ body{word-break:keep-all;overflow-wrap:anywhere}
 .demo figure{margin:0;flex:1 1 240px;max-width:300px;text-align:center}
 .demo video{width:100%;height:auto;aspect-ratio:9/16;border-radius:16px;border:1px solid var(--line);background:#0a0817}
 .demo figcaption{color:var(--muted);font-size:.85rem;margin-top:6px}
+
+.hero h1.brand{line-height:0}
+.hero h1.brand img{width:300px;max-width:72%;height:auto;display:inline-block}
+footer .flogo{text-align:center;margin:0 0 10px}
+footer .flogo img{width:130px;height:auto;display:inline-block;background:#1a1240;padding:12px 18px;border-radius:12px}
