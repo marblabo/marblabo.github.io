@@ -33,6 +33,7 @@ hr{border:0;border-top:1px solid var(--line);margin:28px 0}
 .hero h1.brand{font-size:2.3rem;letter-spacing:.04em;margin:.3em 0 .2em;color:#fff}
 .app{display:flex;align-items:center;gap:16px;text-decoration:none;color:var(--ink);padding:12px;border:1px solid var(--line);border-radius:16px}
 .app:hover{border-color:var(--accent)}
+.app+.app{margin-top:12px}
 .app img{width:72px;height:72px;border-radius:23%;box-shadow:0 4px 14px #0003}
 .app b{display:block;font-size:1.1rem}
 .app small{color:var(--muted);font-size:.85rem;line-height:1.5;display:block}
