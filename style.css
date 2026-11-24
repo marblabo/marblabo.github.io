@@ -52,3 +52,25 @@ li{margin:.6em 0}
 .fontnote a{color:inherit}
 
 body{word-break:keep-all;overflow-wrap:anywhere}
+
+.steps{list-style:none;counter-reset:s;padding:0;margin:.6em 0}
+.steps li{counter-increment:s;position:relative;padding:12px 0 12px 46px;border-top:1px solid var(--line);margin:0}
+.steps li:first-child{border-top:0}
+.steps li::before{content:counter(s);position:absolute;left:0;top:12px;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;text-align:center;line-height:32px}
+.steps b{display:block}
+.shots{display:flex;gap:10px;overflow-x:auto;padding:4px 0 10px;scroll-snap-type:x mandatory}
+.shots img{flex:0 0 auto;width:150px;height:auto;border-radius:14px;border:1px solid var(--line);scroll-snap-align:start}
+.shotlabel{color:var(--muted);font-size:.85rem;margin:.8em 0 0}
+.plan{width:100%;border-collapse:collapse;font-size:.92rem}
+.plan th,.plan td{border-top:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+.plan th{width:34%;font-weight:600}
+
+.btns{align-items:stretch}
+.btn{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2px;line-height:1.5;min-height:64px}
+.btn small{font-weight:400;font-size:.82rem;opacity:.85}
+@media (max-width:480px){.btns{flex-direction:column}.btn{flex:none}}
+
+.steps li,.card p,.note.left{text-wrap:balance}
+
+.plan th{overflow-wrap:normal;font-size:.88rem;line-height:1.5}
+.plan td{font-size:.9rem}
